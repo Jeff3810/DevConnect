@@ -1,13 +1,13 @@
-const mongoose = reuquire('mongoose');
+const mongoose = require('mongoose');
 
-const Userschema = new mongoose.Schema({
+const UserSchema = new mongoose.Schema({
   name: {
     type: String,
     required: true
   },
   email: {
-    name: String,
-    required: true,
+    type: String,
+    required: true, 
     unique: true
   },
   password: {
@@ -23,4 +23,4 @@ const Userschema = new mongoose.Schema({
   }
 });
 
-module.exports = User = mongoose.model('user', UserSchema);
+module.exports = User = mongoose.model('User', UserSchema);

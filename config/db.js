@@ -11,7 +11,7 @@ const db = config.get('mongoURI');
      console.log('mongoDB Connected...')
    } catch(err) {
      console.error(err.message)
-     // Exit with fith failure
+     // Exit process with failure
      process.exit(1)
   }
 }
